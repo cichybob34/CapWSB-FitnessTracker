@@ -10,7 +10,6 @@ import lombok.NoArgsConstructor;
 import lombok.ToString;
 import pl.wsb.fitnesstracker.user.api.User;
 
-
 @Entity
 @Table(name = "Health_Metrics")
 @Getter
@@ -38,8 +37,7 @@ public class HealthMetrics {
     @Column(name = "heartRate", nullable = false)
     private int heartRate;
 
-    public HealthMetrics(
-        final User user,
+    public HealthMetrics(final User user,
         final LocalDate date,
         final double weight,
         final double height,
